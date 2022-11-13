@@ -1,0 +1,42 @@
+[
+    {
+        "category": "Lazy",
+        "class": "p-button-danger",
+        "data": [
+            {"name": "Board Games"},
+            {"name": "Movie Night"},
+            {"name": "Video Games"},
+            {"name": "Fort"},
+            {"name": "Models/Legos/Puzzle"}
+        ]
+    },
+    {
+        "category": "Cheap-O",
+        "class": "p-button-warning",
+        "data": [
+            {"name": "Happy Hour"},
+            {"name": "Drinks @ Mockingbird"},
+            {"name": "Riverfront Walk"},
+            {"name": "Try A New Recipe"}
+        ]
+    },
+    {
+        "category": "Fancy",
+        "class": "p-button-primary",
+        "data": [
+            {"name": "Nice Dinner"},
+            {"name": "Casino Night"},
+            {"name": "Green Lady"}
+        ]
+    },
+    {
+        "category": "Plan Ahead",
+        "class": "p-button-success",
+        "data": [
+            {"name": "WWI Museum"},
+            {"name": "Go See A Movie"},
+            {"name": "Hotel Stay"},
+            {"name": "Daytrip"}
+        ]
+    }
+]

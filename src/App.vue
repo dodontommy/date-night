@@ -1,15 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <MainApp/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import MainApp from './components/MainApp.vue'
+import 'primevue/resources/themes/nova/theme.css'
+import 'primevue/resources/primevue.min.css'
+import 'primeicons/primeicons.css'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MainApp
   }
 }
 </script>
