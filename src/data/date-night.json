@@ -2,7 +2,7 @@
     {
         "category": "Lazy",
         "class": "p-button-danger",
-        "data": [
+        "date_ideas": [
             {"name": "Board Games"},
             {"name": "Movie Night"},
             {"name": "Video Games"},
@@ -13,7 +13,7 @@
     {
         "category": "Cheap-O",
         "class": "p-button-warning",
-        "data": [
+        "date_ideas": [
             {"name": "Happy Hour"},
             {"name": "Drinks @ Mockingbird"},
             {"name": "Riverfront Walk"},
@@ -23,7 +23,7 @@
     {
         "category": "Fancy",
         "class": "p-button-primary",
-        "data": [
+        "date_ideas": [
             {"name": "Nice Dinner"},
             {"name": "Casino Night"},
             {"name": "Green Lady"}
@@ -32,7 +32,7 @@
     {
         "category": "Plan Ahead",
         "class": "p-button-success",
-        "data": [
+        "date_ideas": [
             {"name": "WWI Museum"},
             {"name": "Go See A Movie"},
             {"name": "Hotel Stay"},

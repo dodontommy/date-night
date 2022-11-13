@@ -11,6 +11,7 @@
 import Button from 'primevue/button';
 export default {
   name: 'DateCategory',
+  emits: ['clicked'],
   props: {
     data: Object
   },
@@ -20,7 +21,7 @@ export default {
   methods: {
     select: function(e) {
       e.preventDefault();
-      console.log(this.data);
+      this.$emit('clicked', this.data.date_ideas);
     }
   },
   mounted() {
