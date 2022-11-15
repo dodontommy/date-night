@@ -2,7 +2,7 @@
   <div id="ideas-container">
     <div class="idea fade" 
         :class="{['hidden']: this.singleDisplay != index}" 
-        v-for="(idea, index) in this.ideas" v-bind:key="idea.animation_ident" 
+        v-for="(idea, index) in this.currentDisplay" v-bind:key="index" 
         v-bind:id='"idea-" + index'>
       {{ idea.name }}
     </div> 
@@ -17,25 +17,25 @@ export default {
   },
   data() {
     return {
-      currentDisplay: null,
       singleDisplay: null,
       ideas: []
     }
   },
+  computed: {
+    currentDisplay() {
+      return this.data
+    }
+  },
   watch: {
     data() {
-      this.data.forEach((idea) => {
-        this.ideas.push({
-           "id": this.data.indexOf(idea),
-           "name": idea.name,
-           "animation_ident": 'id-' + this.data.indexOf(idea) + '-' + Math.floor(Math.random() * 10000)
-          })
-      })
-
-     this.animate()
+      this.animate()
     }
   },
   methods: {
+    // Animate cycling through date ideas
+    // Using animation_ident as a random identifier just to update the v-bind:key
+    // which will force a DOM redraw. Randomly cycle through the date ideas 
+    // displaying a new one until we finally land on one.
     animate: async function() {
       let interval = 0
       let max = 15
@@ -43,7 +43,7 @@ export default {
       while(interval < max) {
         setTimeout(() => {
           let i = Math.floor(Math.random() * Object.keys(this.data).length)
-          let idea = this.ideas[i]
+          let idea = this.data[i]
           idea.animation_ident = 'id-' + i + '-' + Math.floor(Math.random() * 10000)
           this.singleDisplay = i
         }, (250 * interval))  
