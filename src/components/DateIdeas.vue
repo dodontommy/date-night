@@ -53,7 +53,7 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style scoped>
 .fade {
   animation: fade 0.25s ease-in;
 }
